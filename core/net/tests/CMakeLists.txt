@@ -1,0 +1,20 @@
+add_executable(event_channel_test event_channel_test.cpp)
+target_link_libraries(event_channel_test liang_core)
+
+add_executable(event_loop_test event_loop_test.cpp)
+target_link_libraries(event_loop_test liang_core)
+
+add_executable(event_loop_thread_test event_loop_thread_test.cpp)
+target_link_libraries(event_loop_thread_test liang_core)
+
+add_executable(event_loop_thread_pool_test event_loop_thread_pool_test.cpp)
+target_link_libraries(event_loop_thread_pool_test liang_core)
+
+add_executable(echo_server_test echo_server_test.cpp)
+target_link_libraries(echo_server_test liang_core)
+
+add_executable(echo_client_test echo_client_test.cpp)
+target_link_libraries(echo_client_test liang_core)
+
+add_executable(lockfree_queque_test lockfree_queque_test.cpp)
+target_link_libraries(lockfree_queque_test liang_core)

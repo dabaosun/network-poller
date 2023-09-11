@@ -1,0 +1,24 @@
+# source codes
+set(log_SRCS
+  logger.cpp
+)
+
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+# add library
+add_library(liang_logger STATIC ${log_SRCS})
+
+message(STATUS "liang_logger lib source codes - ${log_SRCS}")
+
+# link library
+target_link_libraries(liang_logger pthread rt)
+
+# install lib to path
+install(TARGETS liang_logger DESTINATION lib)
+
+message(STATUS "INCLUDE_DIRECTORIES - ${INCLUDE_DIRECTORIES}")
+message(STATUS "CXX_FLAGS: ${CXX_FLAGS}")
+
+# if(LIANG_BUILD_TESTS)
+#   add_subdirectory(tests)
+# endif()
